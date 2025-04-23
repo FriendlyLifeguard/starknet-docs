@@ -7,11 +7,11 @@ Welcome to the first chapter on running your first node on Starknet! You are one
 
 There are four prerequisites before proceeding to next steps.
 
-* Docker = cloud platform that provides us with an isolated environment for our node client. Many node client providers utilize docker as their go to installation method. Please go to this link to download https://docs.docker.com/desktop/[docker desktop^] for your OS. 
+* Docker = Software platform that provides us with an isolated environment for our node client. Many node client providers utilize docker as their go to deploy method. Please go to this link to download https://docs.docker.com/desktop/[docker desktop^] for your OS. 
 
-* Wallet Accounts = We need up to two wallet accounts that will be needed in xref:stake.adoc[] and xref:block-attestation.adoc[] sections. 
+* Browser Wallet  = We need up to two adresses  that will be needed in xref:stake.adoc[] and xref:block-attestation.adoc[] sections. 
 
-* Make sure both Accounts have some STRK tokens. You can visit the https://starknet-faucet.vercel.app/[faucet page^] to request STRK.  
+* Make sure both Accounts have some testnet STRK tokens. You can visit the https://starknet-faucet.vercel.app/[faucet page^] to request STRK.  
 
 * We need ETH sepolia websocket RPC to allow communication between our validator and sepolia testnet. You can create an account with Alchemy, infura or quicknode to get your free RPC. 
 
@@ -44,7 +44,7 @@ https://eqlabs.github.io/pathfinder/getting-started/hardware-requirements[Source
 
 [NOTE] 
 ====
-It is very important that you consider allocating more than the required amount of storage to anticipate future blocks being processed. 
+It is very important that you consider allocating more than the required amount of storage to anticipate future chain growth and compute for attestation. 
 ====
 
 Feel free to pick your client of choice and proceed to either of the section to get started. 
