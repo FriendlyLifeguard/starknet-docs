@@ -126,3 +126,5 @@ If blocks are properly syncing, the log should have the following output:
 Awesome! You are now running your own node on sepolia testnet that is constantly receiving new blocks! But your node is not a validator yet. We will get there eventually. 
 
 Next, we will be interacting with the staking contract to stake our STRK tokens and assigning our operation and reward addresses. Let’s jump in! 
+
+

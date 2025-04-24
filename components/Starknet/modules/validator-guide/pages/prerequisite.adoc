@@ -7,13 +7,13 @@ Welcome to the first chapter on running your first node on Starknet! You are one
 
 There are four prerequisites before proceeding to next steps.
 
-* Docker = Software platform that provides us with an isolated environment for our node client. Many node client providers utilize docker as their go to deploy method. Please go to this link to download https://docs.docker.com/desktop/[docker desktop^] for your OS. 
+* Docker = Docker is a free and widely-used platform that allows us to run node clients in isolated, reproducible environments. It’s the preferred deployment method for many node client providers due to its consistency, portability, and ease of setup. Visit https://docs.docker.com/desktop/[docker desktop^] to install Docker for your OS. 
 
-* Browser Wallet  = We need up to two adresses  that will be needed in xref:stake.adoc[] and xref:block-attestation.adoc[] sections. 
+* Browser Wallet  = We need up to two wallet adresses that will be needed in xref:stake.adoc[] and xref:block-attestation.adoc[] sections. You can use any browser wallet of your choice such as https://www.argent.xyz/download-argent[Argent^] or https://braavos.app/download-braavos-wallet/[Braavos^].
 
-* Make sure both Accounts have some testnet STRK tokens. You can visit the https://starknet-faucet.vercel.app/[faucet page^] to request STRK.  
+* Make sure both wallet addresses have some testnet STRK tokens. You can visit the https://starknet-faucet.vercel.app/[faucet page^] to request STRK.  
 
-* We need ETH sepolia websocket RPC to allow communication between our validator and sepolia testnet. You can create an account with Alchemy, infura or quicknode to get your free RPC. 
+* We need Ethereum Sepolia Websocket RPC URL to allow communication between our validator and sepolia testnet. You can create an account with https://www.alchemy.com/[Alchemy^], https://www.infura.io/[Infura^] or https://www.quicknode.com/[Quicknode^] to get your free RPC. 
 
 With these steps complete, you're now ready to launch your first validator!
 
