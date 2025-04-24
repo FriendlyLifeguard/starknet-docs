@@ -2,12 +2,49 @@
 = Running your block attestation service.
 
 == Introduction
-You are at the final chapter on the Starknet staking guide! The block attestor service allows validators to fulfill a new requirement with the Staking V2 phase that Starknet introduced in https://community.starknet.io/t/snip-28-staking-v2-proposal/115250[SNIP-28^]. The new change enforces existing and new validators to attest to a block within an epoch to be eligible for staking rewards. The idea behind it is that it is a way for validators to show that they are actively preserving the history of the network while proving it by submitting attestations to randomly assigned blocks in each epoch. You can think of an epoch as a way to group number of blocks (currently 40 blocks per epoch) and each epoch acts as a checkpoint for finalizing every validator’s stakes. 
+You are at the final chapter on the Starknet staking guide!  The block attestor service allows validators to fulfill a new requirement with the Staking V2 phase that Starknet introduced in https://community.starknet.io/t/snip-28-staking-v2-proposal/115250[SNIP-28^]. The new change enforces existing and new validators to attest to a block within an epoch to be eligible for staking rewards. The idea behind it is that it is a way for validators to show that they are actively preserving the history of the network while proving it by submitting attestations to randomly assigned blocks in each epoch. You can think of an epoch as a way to group number of blocks (currently 40 blocks per epoch) and each epoch acts as a checkpoint for finalizing every validator's stakes. 
 
-The attestor service will communicate directly with our node therefore, make sure that your Pathfinder node is already running and it’s synced to the latest block. 
+The attestor service will communicate directly with our node therefore, make sure that your Pathfinder node is already running and it's synced to the latest block. 
 Depending if you are using Juno or Pathfinder node use the respective attestation tool 
 
-== Running the block attestor service
+== Juno
+
+. Clone the Starknet Staking V2 repository
+[source,bash]
+----
+git clone https://github.com/NethermindEth/starknet-staking-v2
+cd starknet-staking-v2
+----
+
+. Compile the validator tool
+[source,bash]
+----
+make validator
+----
+
+. Create a configuration file named config.json based on the template below
+[source,json]
+----
+{
+  "provider": {
+    "http": "http://localhost:6060/v0_8",
+    "ws": "ws://localhost:6061/v0_8"
+  },
+  "signer": {
+    "operationalAddress": "0x123",
+    "privateKey": "0x456"
+  }
+}
+----
+
+. Once your Juno node is fully synced, start the attestation service:
+[source,bash]
+----
+./build/validator --config config.json --log-level debug
+----
+
+
+== Pathfinder
 You can run the block attestor service by running the following docker command
 
 [source,terminal]
