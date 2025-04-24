@@ -59,7 +59,7 @@ Once the transaction is included, move on to the staking contract:
    * Operational_address: The address you will use for attestation and other operations
    * Amount: `1000000000000000000` (1 STRK)
    * Pool_enabled: `1` if you want to accept delegations, `0` if not
-   * Commission: Your desired commission as multiple of 1000 (e.g., 3% = 3000)
+   * Commission: Your desired commission as multiple of 100 (e.g., 3% = 300)
 
 === Parameter details
 
