@@ -7,3 +7,7 @@ If you want to keep up with the development of Juno and Pathfinder client, check
 
 * https://github.com/eqlabs/pathfinder[Pathfinder client Github^]
 * https://github.com/NethermindEth/juno?tab=readme-ov-file#run-with-docker[Juno client Github^]
+
+Find out more about staking operations
+
+*  https://docs.starknet.io/architecture-and-concepts/staking/#procedures[Staking procedures^]

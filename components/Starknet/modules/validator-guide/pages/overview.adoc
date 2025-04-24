@@ -3,7 +3,9 @@
 
 == Introduction
 
-Ready to run your first node on Starknet? Then you came to the right place! This comprehensive guide will teach you step by step on how to run your own full node on Sepolia testnet. Additionally, we will also provide steps on how to run your own block attestation service, as this became a new requirement for validators to be eligible for staking rewards (Refer to https://community.starknet.io/t/snip-28-staking-v2-proposal/115250[SNIP-28^] to learn more). 
+Starknet is transitioning to allocate more responsibilities to the validators in the next phase of the staking roadmap, where validators have to attest blocks during a specific window. Sepolia testnet network has already been upgraded to the specs outlined at https://community.starknet.io/t/snip-28-staking-v2-proposal/115250[SNIP-28^], allowing validators to test their set-up in anticipation of the mainnet upgrade.
+
+This comprehensive guide will teach you step by step on how to run your own full node and validator on Sepolia testnet.
 
 
 Here are the table of contents for this guide: 

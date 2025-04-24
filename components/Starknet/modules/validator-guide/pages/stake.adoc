@@ -59,7 +59,7 @@ Once the transaction is included, move on to the staking contract:
    * Operational_address: The address you will use for attestation and other operations
    * Amount: The STRK token amount is required to be written in 18 decimal places. Therefore, it would be your `amount * 10^18`. (e.g., 1 STRK = `1000000000000000000`) 
    * Pool_enabled: `1` if you want to accept delegations, `0` if not
-   * Commission: Your desired commission as multiple of 1000 (e.g., 3% = 3000)
+   * Commission: Your desired commission as multiple of 100 (e.g., 3% = 300)
 
 [NOTE]
 ====
