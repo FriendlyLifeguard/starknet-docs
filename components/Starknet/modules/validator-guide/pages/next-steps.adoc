@@ -11,3 +11,4 @@ If you want to keep up with the development of Juno and Pathfinder client, check
 Find out more about staking operations
 
 *  https://docs.starknet.io/architecture-and-concepts/staking/#procedures[Staking procedures^]
+

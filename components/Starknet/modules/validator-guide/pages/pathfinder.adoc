@@ -2,14 +2,21 @@
 = Spinning up your validator with Pathfinder
 
 == Introduction
-In this chapter, we will be guiding you on how to run your own node on sepolia testnet using Pathfinder. Pathfinder is a Rust implementation of the Starknet client created by Equilibrium Labs.
+In this chapter, we will be guiding you on how to run your own node on sepolia testnet using Pathfinder, a Rust implementation of the Starknet client created by Equilibrium Labs.
 
 == Installing Pathfinder
-To run Pathfinder, we run the following command 
+
+First, we need to create a directory to store our blockchain data.
 
 [source,terminal]
 ----
 mkdir -p $HOME/pathfinder
+----
+
+Then to run Pathfinder, we run the following command 
+
+[source,terminal]
+----
 docker run \
   --name pathfinder \
   --restart unless-stopped \
@@ -29,7 +36,7 @@ Replace `PATHFINDER_ETHEREUM_API_URL` with your personal Ethereum Sepolia WebSoc
 
 [NOTE] 
 ====
-The line `mkdir -p $HOME/pathfinder` is creating a specific directory to store our blockchain data. You can also change the `RUST_LOG` value to `DEBUG` to inspect any issues. 
+You can also change the `RUST_LOG` value to `DEBUG` to inspect any issues. 
 ====
 
 Once the docker container is up and running, you can check the logs of the docker image. 
@@ -56,7 +63,7 @@ To download our snapshot, we first need to download a file manager called *Rclon
 
 Head over to the official https://rclone.org/install/[installation guide^] to get started.
 
-Then, open or create your configuration file on this path (`$HOME/.config/rclone/rclone.conf`) and add the following content:
+Then, create a new file on this path (`$HOME/.config/rclone/rclone.conf`) and add the following content:
 
 [source,terminal]
 ----
